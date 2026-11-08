@@ -1,0 +1,29 @@
+; Fixture journal used by the report and cli hidden tests.
+P 2024-01-31 AAPL $190.00
+P 2024-02-29 AAPL $200.00
+P 2024-01-01 EUR $1.10
+
+2024-01-01 * Opening
+    Assets:Bank:Checking     $5,000.00
+    Assets:Bank:Savings      $10,000.00
+    Equity:Opening
+
+2024-01-15 * Buy shares
+    Assets:Broker            10 AAPL @ $180.00
+    Assets:Bank:Checking
+
+2024-02-01 ! Rent for February in the downtown apartment
+    Expenses:Housing:Rent    $1,200.00
+    Assets:Bank:Checking
+
+2024-02-10 * Groceries
+    Expenses:Food            $85.40
+    Liabilities:Card
+
+2024-02-20 * Trip to Lisbon
+    Expenses:Travel:Lodging  150.00 EUR
+    Liabilities:Card         -150.00 EUR
+
+2024-03-01 * Card payment  ; paid in full
+    Liabilities:Card         $85.40 = $0.00
+    Assets:Bank:Checking

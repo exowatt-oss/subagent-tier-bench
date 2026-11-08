@@ -1,0 +1,18 @@
+; Brokerage example: costs, an include, prices and assertions.
+include invest-prices.journal
+
+2024-03-01 * Fund the broker account
+    Assets:Broker:Cash        $5,000.00
+    Assets:Bank:Checking
+
+2024-03-04 * Buy shares
+    Assets:Broker:Shares      20 AAPL @ $170.25
+    Assets:Broker:Cash
+
+2024-03-20 * Sell shares  ; partial
+    Assets:Broker:Shares      -5 AAPL @@ $900.00
+    Assets:Broker:Cash        $900.00
+
+2024-03-31 * Statement
+    Assets:Broker:Cash        $0.00 = $2,495.00
+    Assets:Broker:Shares      0 AAPL = 15 AAPL

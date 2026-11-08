@@ -1,0 +1,22 @@
+; Example journal for ledgerlite
+P 2024-01-01 EUR $1.10
+
+2024-01-01 * Opening balance
+    Assets:Bank:Checking        $1,000.00
+    Equity:Opening
+
+2024-01-05 * (1001) Grocery store  ; weekly shop
+    Expenses:Food:Groceries        $45.20
+    Assets:Bank:Checking
+
+2024-01-07 ! Coffee with a colleague from accounting
+    Expenses:Food:Dining Out        $4.50
+    Assets:Cash
+
+2024-01-10 Salary
+    Assets:Bank:Checking        $2,500.00 = $3,454.80
+    Income:Salary
+
+2024-01-12 * Currency exchange
+    Assets:Bank:Euro            100.00 EUR @ $1.12
+    Assets:Bank:Checking

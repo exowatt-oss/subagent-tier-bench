@@ -1,0 +1,71 @@
+{
+  "plans": [
+    {
+      "id": "starter",
+      "name": "Starter",
+      "base_fee": "19.00",
+      "metrics": [
+        {
+          "metric": "api_calls",
+          "label": "API calls",
+          "unit": "call",
+          "pricing": "graduated",
+          "included": "1000",
+          "tiers": [
+            {"up_to": "50000", "unit_price": "0.002"},
+            {"up_to": null, "unit_price": "0.0015"}
+          ]
+        },
+        {
+          "metric": "storage",
+          "label": "Storage",
+          "unit": "GB",
+          "pricing": "graduated",
+          "tiers": [
+            {"up_to": null, "unit_price": "0.25"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pro",
+      "name": "Pro",
+      "base_fee": "99.00",
+      "minimum_commit": "50.00",
+      "metrics": [
+        {
+          "metric": "api_calls",
+          "label": "API calls",
+          "unit": "call",
+          "pricing": "graduated",
+          "included": "10000",
+          "tiers": [
+            {"up_to": "100000", "unit_price": "0.0015"},
+            {"up_to": "1000000", "unit_price": "0.001"},
+            {"up_to": null, "unit_price": "0.0008"}
+          ]
+        },
+        {
+          "metric": "storage",
+          "label": "Storage",
+          "unit": "GB",
+          "pricing": "volume",
+          "tiers": [
+            {"up_to": "1000", "unit_price": "0.10"},
+            {"up_to": "5000", "unit_price": "0.08"},
+            {"up_to": null, "unit_price": "0.06"}
+          ]
+        },
+        {
+          "metric": "compute",
+          "label": "Compute",
+          "unit": "hour",
+          "pricing": "graduated",
+          "tiers": [
+            {"up_to": null, "unit_price": "0.045"}
+          ]
+        }
+      ]
+    }
+  ]
+}

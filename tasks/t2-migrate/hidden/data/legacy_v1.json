@@ -1,0 +1,48 @@
+{
+  "site": {"name": "Workshop B", "shift": "early"},
+  "next_id": 12,
+  "orders": [
+    {
+      "id": 14,
+      "title": "Rebuild hydraulic press valve",
+      "asset": "PRESS-2",
+      "priority": "urgent",
+      "status": "in_progress",
+      "assignee": "Mia",
+      "tags": ["Hydraulics", "press", "PRESS"],
+      "estimate_hours": 0.875,
+      "created": "2025-10-02 23:30:00-02:00",
+      "updated": "2025-10-03T09:00:00.75Z",
+      "due": "2025-10-10",
+      "notes": [
+        {"at": "2025-10-03 10:00", "text": "seals ordered"},
+        {"at": "2025-10-03T08:15:00+01:00", "text": "valve stripped"},
+        {"at": "2025-10-03T07:15:00Z", "text": "inspection started"}
+      ],
+      "supplier": "Hytec",
+      "labels": {"color": "red", "rank": 2}
+    },
+    {
+      "id": 2,
+      "title": "Grease conveyor bearings",
+      "asset": "",
+      "assignee": "",
+      "tags": [],
+      "estimate_hours": 0.375,
+      "created": "2025-10-03 00:10:00"
+    },
+    {
+      "id": 9,
+      "title": "Replace guard mesh",
+      "priority": "low",
+      "status": "cancelled",
+      "assignee": "omar",
+      "estimate_hours": 2,
+      "created": "2025-10-05T14:00:00",
+      "updated": "2025-10-06 16:20",
+      "due": null,
+      "tags": ["safety", "Safety"],
+      "notes": []
+    }
+  ]
+}

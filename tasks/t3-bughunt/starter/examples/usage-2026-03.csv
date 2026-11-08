@@ -1,0 +1,12 @@
+event_id,account_id,metric,quantity,unit,timestamp
+ev-1001,acme,api_calls,64000,call,2026-03-02T14:00:00Z
+ev-1002,acme,api_calls,58500,call,2026-03-19T09:30:00-05:00
+ev-1003,acme,storage,1250,GB,2026-03-31T12:00:00Z
+ev-1004,globex,api_calls,12000,call,2026-03-20T10:00:00+01:00
+ev-1005,globex,storage,800,MB,2026-03-25T08:00:00Z
+ev-1006,initech,compute,410,hour,2026-03-10T00:00:00Z
+ev-1007,initech,storage,335,GB,2026-03-15T00:00:00Z
+ev-1008,umbrella,api_calls,250000,call,2026-03-12T05:00:00+05:30
+ev-1009,umbrella,storage,2.4,TB,2026-03-12T05:00:00+05:30
+ev-1010,acme,gpu_hours,3,hour,2026-03-05T00:00:00Z
+ev-1002,acme,api_calls,58500,call,2026-03-19T09:30:00-05:00

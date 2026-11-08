@@ -1,0 +1,17 @@
+{
+  "id": "t2-migrate",
+  "title": "Projects, string ids and a data-format migration in an existing work-order tracker",
+  "shape": "brownfield-change",
+  "package": "wotrack",
+  "workstreams": [
+    "storage",
+    "domain",
+    "query",
+    "cli"
+  ],
+  "hidden_file_timeout_s": 120,
+  "notes": "Implement a cross-cutting RFC in a working ~1.2k-line JSON-file/CLI codebase: prefixed string ids with legacy integer references, projects with uniqueness rules, format-2 storage with automatic idempotent v1 migration (backup, field mapping, UTC timestamp normalisation, unknown-key preservation), multi-key sorting and per-project reports, --json output, deprecations and new exit codes, all without breaking existing behaviour.",
+  "starter_hidden_pass": 0.1154,
+  "hidden_tests": 130,
+  "visible_tests": 27
+}

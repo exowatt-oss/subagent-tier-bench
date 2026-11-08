@@ -1,0 +1,6 @@
+{
+  "coupons": [
+    {"code": "WELCOME10", "type": "percent", "value": "10"},
+    {"code": "SAVE20", "type": "fixed", "value": "20.00"}
+  ]
+}

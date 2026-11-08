@@ -1,0 +1,17 @@
+{
+  "id": "t1-ledger",
+  "title": "Plain-text ledger from a spec",
+  "shape": "greenfield",
+  "package": "ledgerlite",
+  "workstreams": [
+    "parse",
+    "engine",
+    "report",
+    "cli"
+  ],
+  "hidden_file_timeout_s": 120,
+  "notes": "Greenfield double-entry ledger library + CLI from a dense written spec: journal parsing with includes and exact error messages, Decimal balancing with cost-aware amount inference and per-commodity display precision, tree/register reports with conversion, and an argparse CLI with exit-code rules.",
+  "starter_hidden_pass": 0.0,
+  "hidden_tests": 138,
+  "visible_tests": 27
+}

@@ -1,0 +1,16 @@
+{
+  "id": "t3-bughunt",
+  "title": "Triage 12 bug reports against a usage-billing engine",
+  "shape": "bug-hunt",
+  "package": "meterbill",
+  "workstreams": [
+    "ingest",
+    "core",
+    "output"
+  ],
+  "hidden_file_timeout_s": 120,
+  "notes": "Existing ~1.7k-line billing engine with 10 seeded bugs of varied kind and difficulty (one pair masks each other) plus 2 reports that describe documented behaviour; rewards root-cause diagnosis over report-shaped patches and penalises over-broad fixes.",
+  "starter_hidden_pass": 0.3458,
+  "hidden_tests": 107,
+  "visible_tests": 25
+}
